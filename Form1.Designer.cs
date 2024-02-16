@@ -97,6 +97,7 @@
             btnClothing.TabIndex = 4;
             btnClothing.Text = "Clothing";
             btnClothing.UseVisualStyleBackColor = true;
+            btnClothing.Click += btnClothing_Click;
             // 
             // btnGroceries
             // 
@@ -106,6 +107,7 @@
             btnGroceries.TabIndex = 5;
             btnGroceries.Text = "Groceries\r\n";
             btnGroceries.UseVisualStyleBackColor = true;
+            btnGroceries.Click += btnGroceries_Click;
             // 
             // listView1
             // 
@@ -116,6 +118,7 @@
             listView1.TabIndex = 6;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = View.Details;
+            listView1.SelectedIndexChanged += listView1_SelectedIndexChanged;
             // 
             // columnHeader1
             // 
@@ -135,7 +138,7 @@
             // columnHeader4
             // 
             columnHeader4.Text = "ExpiryDate";
-            columnHeader4.Width = 200;
+            columnHeader4.Width = 180;
             // 
             // columnHeader5
             // 
@@ -160,6 +163,7 @@
             btnAdd.TabIndex = 7;
             btnAdd.Text = "Add";
             btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // btnRemove
             // 

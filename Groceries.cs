@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace ProgOOP_Midterm_Part2_Hongfei
 {
@@ -15,14 +17,6 @@ namespace ProgOOP_Midterm_Part2_Hongfei
             _ExpiryDate = expiryDate;
         }
 
-        //public Groceries(string name, double price, int quantity, string expiryDate, double pvalue) : base(name, price, quantity,pvalue)
-        //{
-        //    _ExpiryDate = expiryDate;
-        //}
-
-
-
-
         public string ExpiryDate { get => _ExpiryDate; set => _ExpiryDate=value; }
 
         public override void DisplayProductInfo()
@@ -30,9 +24,12 @@ namespace ProgOOP_Midterm_Part2_Hongfei
             Console.WriteLine($"{Name} {Price} {Quantity} {ExpiryDate}");
         }
 
-        //public override double GetValue(double price, int quantities)
+
+
+        //public static double GetValue(double Price, int Quantity)
         //{
-        //    double PValue = price*quantities;
+        //    double PValue = Price*Quantity;
+            
         //    return PValue;
         //}
 
