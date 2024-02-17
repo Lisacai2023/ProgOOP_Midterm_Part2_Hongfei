@@ -42,7 +42,7 @@
             tetBrand = new TextBox();
             label7 = new Label();
             btnAddNewItem = new Button();
-            listView1 = new ListView();
+            listView2 = new ListView();
             columnHeader1 = new ColumnHeader();
             columnHeader2 = new ColumnHeader();
             columnHeader3 = new ColumnHeader();
@@ -166,16 +166,17 @@
             btnAddNewItem.TabIndex = 13;
             btnAddNewItem.Text = "Add New Product";
             btnAddNewItem.UseVisualStyleBackColor = true;
+            btnAddNewItem.Click += btnAddNewItem_Click;
             // 
-            // listView1
+            // listView2
             // 
-            listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6, columnHeader7 });
-            listView1.Location = new Point(36, 397);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(1066, 498);
-            listView1.TabIndex = 14;
-            listView1.UseCompatibleStateImageBehavior = false;
-            listView1.View = View.Details;
+            listView2.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6, columnHeader7 });
+            listView2.Location = new Point(36, 397);
+            listView2.Name = "listView2";
+            listView2.Size = new Size(1066, 498);
+            listView2.TabIndex = 14;
+            listView2.UseCompatibleStateImageBehavior = false;
+            listView2.View = View.Details;
             // 
             // columnHeader1
             // 
@@ -217,7 +218,7 @@
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1194, 973);
-            Controls.Add(listView1);
+            Controls.Add(listView2);
             Controls.Add(btnAddNewItem);
             Controls.Add(tetBrand);
             Controls.Add(label7);
@@ -254,7 +255,7 @@
         private TextBox tetBrand;
         private Label label7;
         private Button btnAddNewItem;
-        private ListView listView1;
+        private ListView listView2;
         private ColumnHeader columnHeader1;
         private ColumnHeader columnHeader2;
         private ColumnHeader columnHeader3;

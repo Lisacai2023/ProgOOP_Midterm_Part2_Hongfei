@@ -180,15 +180,46 @@ namespace ProgOOP_Midterm_Part2_Hongfei
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            //if (listView1.SelectedItems.Count > 0)
-            //{
-            //    ListViewItem selectedItem = listView1.SelectedItems[0];
-            //    string itemText = selectedItem.Text;
-            //    richTextBox1.AppendText(itemText + Environment.NewLine);
-            //}
+            if (listView1.SelectedItems.Count > 0)
+            {
+                ListViewItem selectedItem = listView1.SelectedItems[0];
+                string itemText0 = listView1.SelectedItems[0].SubItems[0].Text;
+                string itemText1 = listView1.SelectedItems[0].SubItems[1].Text;
+                string itemText2 = listView1.SelectedItems[0].SubItems[2].Text;
+                string itemText3 = listView1.SelectedItems[0].SubItems[3].Text;
+                string itemText4 = listView1.SelectedItems[0].SubItems[4].Text;
+                string itemText5 = listView1.SelectedItems[0].SubItems[5].Text;
+                string itemText6 = listView1.SelectedItems[0].SubItems[6].Text;
+                listView1.Items.Remove(listView1.SelectedItems[0]);
+                listBox1.Items.Add(itemText0 + "  " + itemText1 + "  " + itemText2 + "  " + itemText3 + "  " + itemText4 + "  " + itemText5 + "  " + itemText6 + Environment.NewLine);
+
+            }
 
 
 
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            if (listBox1.Items.Count > 0)
+            {
+                listView1.Items.Add((string)listBox1.SelectedItem);
+                //listBox1.Items.RemoveAt(listBox1.SelectedItem);
+                listBox1.Items.Remove(listBox1.SelectedItems);
+            }
+
+        }//remove
+
+        private void btnDeleteIn_Click(object sender, EventArgs e)
+        {
+            var index = listBox1.SelectedIndex;
+            listBox1.Items.RemoveAt(index);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
         }
     }//class Form1
 
