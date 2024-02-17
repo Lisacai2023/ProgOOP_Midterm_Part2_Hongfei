@@ -180,12 +180,12 @@ namespace ProgOOP_Midterm_Part2_Hongfei
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (listView1.SelectedItems.Count > 0)
-            {
-                ListViewItem selectedItem = listView1.SelectedItems[0];
-                string itemText = selectedItem.Text;
-                richTextBox1.AppendText(itemText + Environment.NewLine);
-            }
+            //if (listView1.SelectedItems.Count > 0)
+            //{
+            //    ListViewItem selectedItem = listView1.SelectedItems[0];
+            //    string itemText = selectedItem.Text;
+            //    richTextBox1.AppendText(itemText + Environment.NewLine);
+            //}
 
 
 

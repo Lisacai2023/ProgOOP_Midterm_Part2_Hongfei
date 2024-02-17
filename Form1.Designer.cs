@@ -44,9 +44,17 @@
             columnHeader7 = new ColumnHeader();
             btnAdd = new Button();
             btnRemove = new Button();
-            richTextBox1 = new RichTextBox();
             btnDeleteIn = new Button();
             button1 = new Button();
+            label3 = new Label();
+            listView2 = new ListView();
+            columnHeader8 = new ColumnHeader();
+            columnHeader9 = new ColumnHeader();
+            columnHeader10 = new ColumnHeader();
+            columnHeader11 = new ColumnHeader();
+            columnHeader12 = new ColumnHeader();
+            columnHeader13 = new ColumnHeader();
+            columnHeader14 = new ColumnHeader();
             SuspendLayout();
             // 
             // label1
@@ -157,7 +165,7 @@
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(1098, 573);
+            btnAdd.Location = new Point(1449, 134);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(188, 58);
             btnAdd.TabIndex = 7;
@@ -167,24 +175,16 @@
             // 
             // btnRemove
             // 
-            btnRemove.Location = new Point(1098, 420);
+            btnRemove.Location = new Point(1666, 134);
             btnRemove.Name = "btnRemove";
             btnRemove.Size = new Size(188, 58);
             btnRemove.TabIndex = 8;
             btnRemove.Text = "Remove";
             btnRemove.UseVisualStyleBackColor = true;
             // 
-            // richTextBox1
-            // 
-            richTextBox1.Location = new Point(1317, 221);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(542, 645);
-            richTextBox1.TabIndex = 9;
-            richTextBox1.Text = "";
-            // 
             // btnDeleteIn
             // 
-            btnDeleteIn.Location = new Point(1317, 134);
+            btnDeleteIn.Location = new Point(1147, 888);
             btnDeleteIn.Name = "btnDeleteIn";
             btnDeleteIn.Size = new Size(260, 58);
             btnDeleteIn.TabIndex = 10;
@@ -193,22 +193,78 @@
             // 
             // button1
             // 
-            button1.Location = new Point(1620, 888);
+            button1.Location = new Point(1439, 888);
             button1.Name = "button1";
             button1.Size = new Size(239, 58);
             button1.TabIndex = 11;
             button1.Text = "Add New Item";
             button1.UseVisualStyleBackColor = true;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 10F);
+            label3.Location = new Point(1147, 146);
+            label3.Name = "label3";
+            label3.Size = new Size(274, 46);
+            label3.TabIndex = 13;
+            label3.Text = "Inventory Editing";
+            // 
+            // listView2
+            // 
+            listView2.Columns.AddRange(new ColumnHeader[] { columnHeader8, columnHeader9, columnHeader10, columnHeader11, columnHeader12, columnHeader13, columnHeader14 });
+            listView2.Location = new Point(1147, 221);
+            listView2.Name = "listView2";
+            listView2.Size = new Size(1040, 643);
+            listView2.TabIndex = 14;
+            listView2.UseCompatibleStateImageBehavior = false;
+            listView2.View = View.Details;
+            // 
+            // columnHeader8
+            // 
+            columnHeader8.Text = "Name";
+            columnHeader8.Width = 150;
+            // 
+            // columnHeader9
+            // 
+            columnHeader9.Text = "Price";
+            columnHeader9.Width = 120;
+            // 
+            // columnHeader10
+            // 
+            columnHeader10.Text = "Quantities";
+            columnHeader10.Width = 150;
+            // 
+            // columnHeader11
+            // 
+            columnHeader11.Text = "ExpiryDate";
+            columnHeader11.Width = 180;
+            // 
+            // columnHeader12
+            // 
+            columnHeader12.Text = "Size";
+            columnHeader12.Width = 120;
+            // 
+            // columnHeader13
+            // 
+            columnHeader13.Text = "Brand";
+            columnHeader13.Width = 150;
+            // 
+            // columnHeader14
+            // 
+            columnHeader14.Text = "Value";
+            columnHeader14.Width = 150;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonFace;
-            ClientSize = new Size(1904, 1010);
+            ClientSize = new Size(2276, 1010);
+            Controls.Add(listView2);
+            Controls.Add(label3);
             Controls.Add(button1);
             Controls.Add(btnDeleteIn);
-            Controls.Add(richTextBox1);
             Controls.Add(btnRemove);
             Controls.Add(btnAdd);
             Controls.Add(listView1);
@@ -242,9 +298,17 @@
         private ColumnHeader columnHeader6;
         private Button btnAdd;
         private Button btnRemove;
-        private RichTextBox richTextBox1;
         private Button btnDeleteIn;
         private Button button1;
         private ColumnHeader columnHeader7;
+        private Label label3;
+        private ListView listView2;
+        private ColumnHeader columnHeader8;
+        private ColumnHeader columnHeader9;
+        private ColumnHeader columnHeader10;
+        private ColumnHeader columnHeader11;
+        private ColumnHeader columnHeader12;
+        private ColumnHeader columnHeader13;
+        private ColumnHeader columnHeader14;
     }
 }
