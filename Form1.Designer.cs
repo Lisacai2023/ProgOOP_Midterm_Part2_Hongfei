@@ -184,7 +184,7 @@
             // 
             // btnDeleteIn
             // 
-            btnDeleteIn.Location = new Point(1317, 888);
+            btnDeleteIn.Location = new Point(1317, 134);
             btnDeleteIn.Name = "btnDeleteIn";
             btnDeleteIn.Size = new Size(260, 58);
             btnDeleteIn.TabIndex = 10;
