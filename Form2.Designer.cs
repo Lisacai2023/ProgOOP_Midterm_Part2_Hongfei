@@ -50,6 +50,7 @@
             columnHeader5 = new ColumnHeader();
             columnHeader6 = new ColumnHeader();
             columnHeader7 = new ColumnHeader();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -213,11 +214,22 @@
             columnHeader7.Text = "Value";
             columnHeader7.Width = 150;
             // 
+            // button1
+            // 
+            button1.Location = new Point(807, 324);
+            button1.Name = "button1";
+            button1.Size = new Size(295, 53);
+            button1.TabIndex = 15;
+            button1.Text = "Add into Inventory\r\n";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1194, 973);
+            Controls.Add(button1);
             Controls.Add(listView2);
             Controls.Add(btnAddNewItem);
             Controls.Add(tetBrand);
@@ -263,5 +275,6 @@
         private ColumnHeader columnHeader5;
         private ColumnHeader columnHeader6;
         private ColumnHeader columnHeader7;
+        private Button button1;
     }
 }

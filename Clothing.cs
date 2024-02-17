@@ -21,14 +21,6 @@ namespace ProgOOP_Midterm_Part2_Hongfei
             Console.WriteLine($"{Name} {Price} {Quantity} {Size}");
         }
 
-        //public override double GetValue(double price, int quantities)
-        //{
-        //    double listValue = price*quantities;
-        //    return listValue;
-        //}
-
-
-
 
 
 

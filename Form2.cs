@@ -52,6 +52,13 @@ namespace ProgOOP_Midterm_Part2_Hongfei
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(listView2.SelectedItems.Count > 0)
+            {
+                listView2.Items.Remove(listView2.SelectedItems[0]);
+            }
 
+        }
     }
 }

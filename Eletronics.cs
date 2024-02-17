@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,5 +21,7 @@ namespace ProgOOP_Midterm_Part2_Hongfei
         {
             Console.WriteLine($"{Name} {Price} {Quantity} {Brand}");
         }
+
+
     }
 }

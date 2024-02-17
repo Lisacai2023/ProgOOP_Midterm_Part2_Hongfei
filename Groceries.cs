@@ -26,12 +26,6 @@ namespace ProgOOP_Midterm_Part2_Hongfei
 
 
 
-        //public static double GetValue(double Price, int Quantity)
-        //{
-        //    double PValue = Price*Quantity;
-            
-        //    return PValue;
-        //}
 
 
     }//Class
