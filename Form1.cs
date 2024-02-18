@@ -81,9 +81,7 @@ namespace ProgOOP_Midterm_Part2_Hongfei
 
                 listView1.Items.Add(item);
 
-
-
-            }
+            }//listview1
 
 
         }//All products
