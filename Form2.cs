@@ -35,7 +35,6 @@ namespace ProgOOP_Midterm_Part2_Hongfei
 
             List<Product> addNewdatalist = Inventory.Data;
 
-            ////Old version
             ListViewItem Additem = new ListViewItem(tetName.Text);
             Additem.SubItems.Add(tetPrice.Text);
             Additem.SubItems.Add(tetQuantities.Text);
@@ -49,8 +48,6 @@ namespace ProgOOP_Midterm_Part2_Hongfei
             Additem.SubItems.Add(newValue.ToString());
             listView2.Items.Add(Additem);
 
-            //2-17 update synchronized function in two listview
-            //Add new item to Groceries,Eletronics,Clothing
             Groceries addnewGroceries = new Groceries(tetName.Text,double.Parse(tetPrice.Text),int.Parse(tetQuantities.Text),tetExpiryDate.Text);
             Inventory.Data.Add(addnewGroceries);
             Eletronics addnewEletronics = new Eletronics(tetName.Text, double.Parse(tetPrice.Text), int.Parse(tetQuantities.Text), tetBrand.Text);
